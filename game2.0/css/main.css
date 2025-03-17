@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+*{margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white
+  
+}
+a {text-decoration: 0;
+}
+
+img {max-width: 100%;
+}
+
+.wrapper{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 100%);   /* градиент всего сайта фон*/
+    width: 100%;
+}
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+header .logo { 
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+header nav {
+    float: right;
+    width: 50%;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    color: #ffffff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {  /* кнопка не приминяется */
+    border-bottom:  5px solid #DC7000;
+
+}
+header nav ul li.active::after {   /*сложно тяжело  */
+    content:" ";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative; /*относительное поз обьекта */
+    top: 10px;  /*'если надо отступ сверху*/
+    left: -15px;   /*не забыть что - минус  тоже можно использовать */
+
+}
+
+
+
+header nav ul li.btn a, .email .block button {  /* кнопка контакты */
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px; /* округленость углов */
+    transition: all 400ms ease-in; /*анимация */
+}
+
+header nav ul li.btn a:hover, .email .block button:hover {    /* обратный цвет кнопки */
+    background: #e0612e;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}    
+
+.hero--info{
+    width: 530px;
+    padding-top:  70px;
+}
+
+.hero--info h2 {
+    color:#ee7b01;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hero--info h1 {
+    
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170% ; /* межстрочная высота */
+    margin: 30px 0;    /* отступ сверху   0  чтоб по бокам было как обычно*/
+}
+
+.hero--info .btn {
+    background: #FA9021;
+    color:#fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;  /* обводка которая не нужна ,реально не нужна отвечаю*/
+    transition: all 500ms ease;
+    font-size: 18px;
+
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* увеличивает размер кнопки при наведений*/
+}
+
+.hero img {
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
