@@ -209,13 +209,13 @@ header nav ul li.btn a:hover, .email .block button:hover {    /* обратны�
     }
 
     .features {
-        background: url(/game2.0/img/Rectangle\ 5.png)no-repeat center center fixed;
+        background: url(/game2.0/img/Rectangle5.png)no-repeat center center fixed;
         background-size: cover;
         padding: 80px 0;
     }
 
 
-    .features h3 {
+    .features h3 { 
         margin-bottom:  20px;
         max-width:  800px;
         text-align: center;
@@ -287,4 +287,58 @@ header nav ul li.btn a:hover, .email .block button:hover {    /* обратны�
         width: 60px;
         text-align: center;
         margin: 0 auto; /*поставить на середину*/
+    }
+
+    .email {
+        padding-bottom: 125px;
+    }
+
+    .email h3 {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+    .email .block {
+        background: black;
+        margin-top: 30px;
+        border-radius: 10px;
+        padding: 40px 3%;
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .email .block h4 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .email .block p {
+        width: 500px;
+    }
+    .email .block input {
+        background: #fff;
+        outline: none;
+        border: 0;
+        border-radius: 5px;
+        width: 380px;
+        padding: 20px 30px;
+        position: relative;
+        right: -145px;
+        z-index: 1;
+        
+    }
+
+
+    .email .block button {
+        cursor: pointer;
+        border: 0;
+        padding: 16px 19px;
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+    }
+
+    .email .block input ::placeholder {
+        color: rgb(255, 255, 255);
     }

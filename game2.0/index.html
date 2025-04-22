@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamewebsite</title>
-    <link rel="stylesheet" href="/game2.0/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet"/>
 </head> 
  
 <body>
@@ -46,20 +45,20 @@
           
           <div class="games">
             <div class="block">
-              <img src="img/Rectangle 1.png" alt="">
-              <span><img src="img/fire 1.svg" alt="">26k Followers</span>
+              <img src="img/Rectangle1.png" alt="">
+              <span><img src="img/fire1.svg" alt="">26k Followers</span>
             </div>
             <div class="block">
-              <img src="img/Rectangle 2.png" alt="">
-              <span><img src="img/fire 1.svg" alt="">18k Followers</span>
+              <img src="img/Rectangle2.png" alt="">
+              <span><img src="img/fire1.svg" alt="">18k Followers</span>
             </div>
             <div class="block">
-              <img src="img/Rectangle 3.png" alt="">
-              <span><img src="img/fire 1.svg" alt="">10k Followers</span>
+              <img src="img/Rectangle3.png" alt="">
+              <span><img src="img/fire1.svg" alt="">10k Followers</span>
             </div>
             <div class="block">
-              <img src="img/Rectangle 4.png" alt="">
-              <span><img src="img/fire 1.svg" alt="">11k Followers</span>
+              <img src="img/Rectangle4.png" alt="">
+              <span><img src="img/fire1.svg" alt="">11k Followers</span>
             </div>
           </div>
 
@@ -80,30 +79,30 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus mollitia doloremque illo</p>
     <div class="info">
       <div class="block">
-        <img src="img/Group 1.png" alt="">
+        <img src="img/Group1.png" alt="">
         <p>Mobile Game </p>
-        <img src="img/arrow 1.svg" alt="">
+        <img src="img/arrow1.svg" alt="">
       </div>
       <div class="block">
-        <img src="img/Group 6.png" alt="">
+        <img src="img/Group6.png" alt="">
         <p>Mobile Game </p>
-        <img src="img/arrow 1.svg" alt="">
+        <img src="img/arrow1.svg" alt="">
       </div><div class="block">
-        <img src="img/Group 2.png" alt="">
+        <img src="img/Group2.png" alt="">
         <p>Mobile Game </p>
-        <img src="img/arrow 1.svg" alt="">
+        <img src="img/arrow1.svg" alt="">
       </div><div class="block">
-        <img src="img/Group 3.png" alt="">
+        <img src="img/Group3.png" alt="">
         <p>Mobile Game </p>
-        <img src="img/arrow 1.svg" alt="">
+        <img src="img/arrow1.svg" alt="">
       </div><div class="block">
-        <img src="img/Group 4.png" alt="">
+        <img src="img/Group4.png" alt="">
         <p>Mobile Game </p>
-        <img src="img/arrow 1.svg" alt="">
+        <img src="img/arrow1.svg" alt="">
       </div><div class="block">
-        <img src="img/Group 5.png" alt="">
+        <img src="img/Group5.png" alt="">
         <p>Mobile Game </p>
-        <img src="img/arrow 1.svg" alt="">
+        <img src="img/arrow1.svg" alt="">
       </div>
     </div>
   </div>
@@ -113,18 +112,48 @@
     <h3>Our Recent Projects</h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, reicien</p>
     <div class="images">
-      <img src="img/project 1.png" alt="">
-      <img src="img/project 2.png" alt="">
-      <img src="img/project 3.png" alt="">
+      <img src="img/project1.png" alt="">
+      <img src="img/project2.png" alt="">
+      <img src="img/project3.png" alt="">
     </div>
     <div class="images">
-      <img src="img/project 4.png" alt="">
-      <img src="img/project 5.png" alt="">
-      <img src="img/project 6.png" alt="">
+      <img src="img/project4.png" alt="">
+      <img src="img/project5.png" alt="">
+      <img src="img/project6.png" alt="">
     </div>
     <a href="" class="see-all">SEE ALL</a>
   </div>
-</div>
+  <div class="container email">
+    <h3>Lorem Ipsum</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, reicien</p>
+    <div class="block">
+      <div>
+        <h4>Stay in the loop</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <input type="email" id="emailfile" placeholder="Email adress">
+      <button onclick="checkEmail()">Continue</button>
+    </div>
+  </div>
+  
+  <script>
+    function checkEmail() {
+      let emailInput = document.querySelector("#emailfile");
+      let email = emailInput.value;
+  
+      alert(email);
+  
+      if (!email.includes("@")) {
+        alert("нет символа @");
+      } else if (!email.includes(".")) {
+        alert("нет символа .");
+      } else {
+        alert("все отлично");
+      }
+    }
+  </script>
+  
+
     
 </body>
 </html>
