@@ -29,7 +29,8 @@ img {max-width: 100%;
 header {
     padding: 50px 0;
 }
-header .logo { 
+header .logo,
+footer .bloks .logo { 
     text-transform: uppercase;
     font-size: 29px;
     font-weight: 800;
@@ -276,18 +277,16 @@ header nav ul li.btn a:hover, .email .block button:hover {    /* обратны�
         padding:  12px 23px;
         display: block;
         transition: all 500ms;
+        float: none;
+        width: 60px;
+        text-align: center;
+        margin: 0 auto; /*поставить на середину*/
     }
     
     .projects .see-all:hover {
         transform: scale(1.1);
     }
 
-    .projects .see-all {
-        float: none;
-        width: 60px;
-        text-align: center;
-        margin: 0 auto; /*поставить на середину*/
-    }
 
     .email {
         padding-bottom: 125px;
@@ -342,3 +341,51 @@ header nav ul li.btn a:hover, .email .block button:hover {    /* обратны�
     .email .block input ::placeholder {
         color: rgb(255, 255, 255);
     }
+
+    .images img,
+.games .block img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.images img:hover,
+.games .block img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+footer{
+    background: black;
+    padding: 50px;
+}
+
+footer .bloks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bloks p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .bloks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+footer .bloks ul li {
+    list-style: none;
+    margin-top: 7px;
+}
+ 
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer > p {
+    text-align: center;
+}
