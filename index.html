@@ -14,24 +14,26 @@
 </head> 
  
 <body>
-    <div class="wrapper">
-        <header class="container">
-          <span class="logo">logo</span>
-          <nav>
-            <button class="burger" id="burger">
-              ☰
-            </button>
-            <ul>
-              <li class="active"><a href="/index.html">Home</a></li>
-              <li><a href="/about.html">About us</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">News</a></li>
-              <li class="btn"><a href="#">Contacts</a></li>
-            </ul>
-          </nav>
-          
-        </header>
-  
+  <div class="wrapper">
+    <header class="container">
+      <span class="logo">logo</span>
+      <nav>
+        <button class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li class="active"><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">News</a></li>
+          <li class="btn"><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
         <div class="hero container">
           <div class="hero--info">
             <h2>3D game Dev</h2>
@@ -184,7 +186,15 @@
       }
     }
   </script>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav-links');
   
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+      burger.classList.toggle('open');
+    });
+  </script>
   
 
     
